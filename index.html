@@ -101,18 +101,31 @@
         </p>
 
         <!-- CTA Buttons -->
-        <div class="flex justify-center flex-wrap gap-4 mb-20">
-            <a href="mailto:dka120@hotmail.com?subject=Code%20Access%20Request:%20Nixie%20PRO" 
-               onclick="navigator.clipboard.writeText('dka120@hotmail.com'); this.innerHTML='<svg class=\'w-5 h-5\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M5 13l4 4L19 7\'></path></svg> Email Copied!';"
-               class="btn-glow px-6 py-3 rounded-lg font-medium flex items-center gap-2 cursor-pointer">
-               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-               Request Code Access
-            </a>
-            <a href="https://www.linkedin.com/in/daniel-karlsson-3421b53b4/?locale=sv" target="_blank"
-               class="px-6 py-3 rounded-lg font-medium text-slate-300 border border-slate-700 hover:bg-slate-800 transition flex items-center gap-2">
-               <svg class="w-5 h-5 text-sky-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.39-2.58 7-2.78 7 2.47v6.77z"/></svg>
-               About Daniel (LinkedIn)
-            </a>
+        <div class="flex flex-col items-center mb-16">
+            <div class="flex justify-center flex-wrap gap-4 mb-6">
+                <a href="mailto:dka120@hotmail.com?subject=Technical%20Review%20Request:%20Nixie%20PRO" 
+                   onclick="navigator.clipboard.writeText('dka120@hotmail.com'); this.innerHTML='<svg class=\'w-5 h-5\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M5 13l4 4L19 7\'></path></svg> Email Copied!';"
+                   class="btn-glow px-6 py-3 rounded-lg font-medium flex items-center gap-2 cursor-pointer">
+                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                   Request Technical Review
+                </a>
+                <a href="https://www.linkedin.com/in/daniel-karlsson-3421b53b4/?locale=sv" target="_blank"
+                   class="px-6 py-3 rounded-lg font-medium text-slate-300 border border-slate-700 hover:bg-slate-800 transition flex items-center gap-2">
+                   <svg class="w-5 h-5 text-sky-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.39-2.58 7-2.78 7 2.47v6.77z"/></svg>
+                   About Daniel (LinkedIn)
+                </a>
+            </div>
+            
+            <!-- OPSEC Disclaimer -->
+            <div class="max-w-xl text-center glass px-5 py-4 rounded-lg border-amber-900/30 bg-amber-900/10 shadow-inner">
+                <p class="text-[0.65rem] text-amber-500/90 uppercase tracking-widest font-bold mb-2 flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    OPSEC Notice
+                </p>
+                <p class="text-[0.8rem] text-slate-400 leading-relaxed">
+                    Due to the sensitive nature of the data models and Zero-Trust constraints, raw source code is not publicly hosted. Guided architectural walk-throughs are available to verified parties via screen-share.
+                </p>
+            </div>
         </div>
 
         <!-- Mobile Fallback for Dashboard -->
